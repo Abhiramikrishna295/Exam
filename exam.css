@@ -1,0 +1,383 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "IBM Plex Serif", serif;
+    
+}
+section{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://static.independent.co.uk/2024/01/05/15/newFile-6.jpg);
+    background-repeat: no-repeat;
+    background-attachment: absolute; 
+    background-size:100% 100%;
+}
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    box-shadow:0 0 10px  rgba(0,0,0,0.5);
+    z-index: 1000;
+    box-shadow: white;
+}
+section nav .logo img{
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    margin: 5px 0;
+    border-radius: 100%;
+    border: 1rem;
+    background: #ffffff;
+}
+section nav ul{
+    list-style: none;
+}
+section nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+section nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 17px;
+    text-transform: uppercase;
+   /*  transition: 0.1s; */
+}
+/* section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #ad7b7b;
+    display: block;
+    transition: 0.2s linear;
+} */
+section nav ul li a:hover::after{
+    width: 100%;
+
+}
+
+
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 130px;
+
+}
+section .main .main-text h1{
+    /* font-size: 45px; */
+    position: relative;
+    top: 50px;
+    left: -100px; 
+    font-size: 3rem;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+  }
+
+
+
+section .btn{
+    background:green;
+    position: relative;
+    left: 550px;
+    bottom: -250px;
+    width: 130px;
+    cursor: pointer;
+    border-radius: 7px;
+    padding: 10px 10px;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+}
+section .btn a{
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px;
+   transition: 0.5s;
+}
+section .btn a:hover{
+    text-decoration: underline;
+    font-size: 20px;
+}
+.packages{
+    width: 100%;
+    padding: 70px 0;
+    background-image: url(https://static.independent.co.uk/2023/08/02/10/iStock-1185953092.jpg);
+    background-repeat: no-repeat;
+    background-attachment: absolute; 
+    background-size:100% 100%;
+}
+.packages h1{
+     
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: #000000;
+}
+.packages-box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid gap: 15px;
+    
+}
+.packages-cart{
+    width: 325px ;
+    height: 480px ;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+ .packages-image{
+    width:300px;
+   /*  height: 245px; */
+    margin: 0 auto;
+    overflow: hidden; 
+} 
+.packages-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+.packages-image:hover img{
+    transform: scale(1.1);
+}
+.packages-info h2{
+    width: 100%;
+    text-align: center;  
+    margin: 10px auto 10px auto;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+.packages h3{
+    width: 100%;
+    text-align: center;  
+    margin: 10px auto 10px auto;
+    font-size: 20px;
+    color: rgb(244, 179, 88);
+}
+.packages-info p{
+    text-align: center;
+    margin-top: 8px;
+    line-height: 21px;
+    color: #000000;
+}
+ .packages-icon{
+    color: #fff;
+    text-align: center;
+   /*  margin: 10px 0 10px 0;  */
+}  
+.packages-btn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 8px 10px;
+    margin: 0 80px;
+    transition: 0.5s;
+
+}
+.packages-btn a:hover{
+    background: #272adb;
+    text-decoration: underline;
+    font-size: 20px;
+
+}
+.morepackages-btn{
+    background:rgb(5, 39, 113);
+    position: relative;
+    left: 650px;
+    width: 130px;
+    cursor: pointer;
+    border-radius: 7px;
+    padding: 10px 10px;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+}
+.morepackages-btn a{
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px;
+   transition: 0.5s;
+}
+.morepackages-btn a:hover{
+    text-decoration: underline;
+    font-size: 20px;
+}
+.booking{
+    background: url(https://t3.ftcdn.net/jpg/05/80/09/14/360_F_580091404_VVtiIDzM7Uu9hgS9dk8jeP9xtYT2rsoB.jpg);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+    padding: 100px 10% 100px;
+}
+.book-form form{
+    position: relative;
+}
+.book-form h5{
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #fff;
+}
+.book-form form input, form textarea{
+          width: 100%;
+          padding: 15px;
+          background: #f4f5fb;
+          color: #000000;
+          border: none;
+          outline: none;
+          font-size: 15px;
+          border-radius: 10px;
+          box-shadow: 0px 5px 5px -6px black;
+          margin-bottom: 10px;
+}
+.book-form textarea{
+    resize: none;
+    height: 100px;
+}
+.blogs{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+    background: url(https://img.freepik.com/free-photo/elevated-view-coffee-cup-spiral-notepad-eyeglasses-laptop-mouse-blue-backdrop_23-2148178553.jpg);
+   
+}
+.blogs h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+.blogs-box{
+    width: 95%;
+    margin: 70px auto;
+    display: flex;
+   
+}
+.blogs-cart{
+    width: 350px;
+    height: 535px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    border-radius: 8px;
+    padding: 8px 20px;
+    margin: 0 50px;
+    background-color: #ccc;
+
+}
+.blogs-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s;
+}
+.blogs-cart:hover .blogs-profile{
+    transform: translateY(-60px);
+
+}
+.blogs-profile img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+    border-radius: 50%;
+    border: 5px solid #ccc;
+} 
+.blogs-text{
+    text-align: center; 
+}
+.name{
+    color: #000000;
+    transition: 0.3s;
+}
+.blogs-cart:hover .name{
+    transform: translateY(-50px);
+}
+.blogs-icon{
+    color: #d7a63b;
+    transition: 0.3s;
+
+}.blogs-cart:hover .blogs-icon{
+    transform: translateY(-50px);
+}
+.blogs-social i{
+    margin: 5px 1px;
+    font-size: 15px;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.3s;
+}
+.blogs-cart:hover .blogs-social i{
+    opacity: 1;
+    transform: translateY(-8px);
+}
+.blogs-text p{
+    text-align: center;
+    line-height: 22px;
+    transition: 0.3s;
+}
+.blogs-cart:hover .blogs-text p{
+    margin-top: 5px;
+}
+footer{
+    background-color: black;
+    color:white;
+
+}
+footer .section_container{
+    display: grid;
+    gap: 1.5rem;
+    text-align: center;
+}
+footer h4{
+    font-size:20px;
+    font-weight: 400;
+}
+.social_icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.social_icons i{
+    padding: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+footer p{
+    font-style: italic;
+}
+.social_icons i{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    color: rgb(183, 183, 183);
+    background: rgba(40,130,214,0.8);
+    text-align: center;
+    justify-content: center;
+    line-height: 44px;
+    border-radius: 50%;
+    transition: 0.3s;
+    margin: 0 20px 8px 0; 
+}
+.social_icons i:hover{
+    color: #4d4f55;
+    background: rgb(229, 192, 131);
+}
